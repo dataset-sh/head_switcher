@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+    "/.*",
+    "/dist",
+    "/doc-site",
+    "/tests",
+    "/utils",
+]
+
+artifacts = [
+    "*.frontend"
+]
+
+[project]
+name = "head_switcher"
+version = "0.0.1"
+authors = [
+    { name = "Hao Wu", email = "haowu@dataset.sh" },
+]
+description = "Help you load frontend asset into your headless flask app without using static folder config."
+readme = "readme.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+license = { text = "MIT License" }
+
+[project.scripts]
+"build-frontend-pack" = "head_switcher.cli:run"
+
+[project.urls]
+"Homepage" = "https://github.com/dataset-sh/head_switcher"
+"Bug Tracker" = "https://github.com/dataset-sh/head_switcher/issues"
+
