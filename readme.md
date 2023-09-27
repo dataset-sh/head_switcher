@@ -1,5 +1,7 @@
 # head_switcher: Flask Single Page App Frontend Packaging Tool
 
+[![codecov](https://codecov.io/gh/dataset-sh/head_switcher/graph/badge.svg?token=dI9trrckl4)](https://codecov.io/gh/dataset-sh/head_switcher)
+
 This package simplifies the process of packaging and loading frontend assets for your headless flask app.
 In another word, this package install and switch **head** for your
 **[headless](https://en.wikipedia.org/wiki/Headless_software)** flask apps.
